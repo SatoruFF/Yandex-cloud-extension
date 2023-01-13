@@ -1,0 +1,33 @@
+
+.myForm {
+    padding: 20px;
+    // margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    input {
+        color: black;
+        background: none;
+        border: none;
+        outline: none;
+        width: 90%;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+    input[type=email]::placeholder {
+        color: black;
+        opacity: 0.5;
+        text-transform: uppercase;
+    }
+    input[type=password]::placeholder {
+        color: black;
+        opacity: 0.5;
+        text-transform: uppercase;
+    }
+    input:focus {
+        transform: scale(1.01);
+        transition: transform 0.25s;
+    }
+}

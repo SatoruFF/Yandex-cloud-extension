@@ -1,0 +1,57 @@
+@import '../utils/templates';
+
+
+.auth__wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSide {
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    @extend %centerTemplate;
+}
+
+.rightSide {
+    background: url('../assets/test7.png');
+    width: 50%;
+    @extend %centerTemplate;
+}
+
+.form__space {
+    padding-bottom: 20px;
+    width: 80%;
+    // height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
+
+.changePage {
+    margin-top: 10px;
+    color: skyblue;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .leftSide {
+        display: none;
+    }
+    .rightSide {
+        width: 100%;
+    }
+}

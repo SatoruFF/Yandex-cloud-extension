@@ -1,0 +1,45 @@
+@import '../utils/templates';
+
+.personal__wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/test9.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.left__sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    
+    button {
+        margin-top: 10px;
+    }
+}
+
+.sidebar__avatar {
+    margin-top: 20px;
+    img {
+        width: 100px;
+        border-radius: 100%;
+    }
+}
+
+.banner {
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    margin: 20px;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.first {
+    margin-left: 50px;
+}

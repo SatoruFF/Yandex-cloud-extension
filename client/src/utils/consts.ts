@@ -1,0 +1,7 @@
+export const LOGIN_ROUTE: string = '/login'
+export const REGISTRATION_ROUTE: string = '/registration'
+export const ACCESS_ROUTE: string = '/access'
+export const WELCOME_ROUTE: string = '/' 
+export const GROUP_ROUTE: string = '/group' 
+export const USERS_ROUTE: string = '/users'
+export const PERSONAL_ROUTE: string = '/personal' 

@@ -1,0 +1,81 @@
+@import '../utils/templates.scss';
+
+.welcome__wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/test8.png') center center;
+    background-size: cover;
+    @extend %centerTemplate;
+}
+
+.welcome__banner {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.banner__title {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.banner__title:hover {
+    background-color: rgb(84, 84, 84);
+    cursor: default;
+}
+
+.banner__users {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    .banner__item {
+        background-color: black;
+        margin: 5px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .banner__item:hover {
+        background-color: rgb(84, 84, 84);
+        cursor: default;
+    }
+}
+
+.banner__info {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .welcome__banner {
+        overflow: hidden;
+    }
+    .banner__users {
+        flex-direction: column;
+    }
+}

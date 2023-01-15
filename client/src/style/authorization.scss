@@ -2,10 +2,9 @@
 
 
 .auth__wrapper {
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: row;
+    @extend %wrapperSizes
 }
 
 .leftSide {
@@ -17,7 +16,7 @@
 }
 
 .rightSide {
-    background: url('../assets/test7.png');
+    background: url('../assets/test9.png');
     width: 50%;
     @extend %centerTemplate;
 }

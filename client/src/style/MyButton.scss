@@ -4,7 +4,8 @@
     font-weight: 700;
     text-decoration: none;
     user-select: none;
-    padding: .5em 2em;
+    // padding: .5em 2em;
+    padding: 14px;
     outline: none;
     border: 2px solid;
     border-radius: 1px;
@@ -15,6 +16,7 @@
 
 .myBtn:hover {
     background: rgb(84, 84, 84);
+    border: 2px solid lightblue;
 }
 
 .myBtn:active {

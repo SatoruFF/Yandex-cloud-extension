@@ -7,8 +7,7 @@ const Welcome = () => {
         <div className="welcome__wrapper">
             <div className="welcome__banner animate__animated animate__fadeInDown">
             <img src={logo} alt="" />
-                <div className="banner__title"> welcome</div> <hr />
-                <div className="banner__description"> <div className="banner__info">this is extension of YandexCloud for the administration any group</div>  <br />
+                <div className="banner__title"> welcome</div>
                     <p>made by:</p>
                         <div className="banner__users animate__animated animate__fadeInDownBig">
                             <div className='banner__item'>satoruF</div>
@@ -19,7 +18,6 @@ const Welcome = () => {
                             <div className='banner__item'>zz</div>
                             <div className='banner__item'>pavel</div>
                         </div>
-                </div>
             </div>
         </div>
     );

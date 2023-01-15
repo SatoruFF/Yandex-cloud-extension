@@ -1,10 +1,10 @@
-import Access from "./pages/Access"
+import Access from "./pages/EditGroup"
 import Authorization from "./pages/Authorization"
 import GroupInfo from "./pages/GroupInfo"
 import Personal from "./pages/Personal"
-import Users from "./pages/Users"
 import Welcome from "./pages/Welcome"
-import { ACCESS_ROUTE, GROUP_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, USERS_ROUTE, WELCOME_ROUTE, PERSONAL_ROUTE } from "./utils/consts"
+import { EDIT_ROUTE, GROUP_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, WELCOME_ROUTE, PERSONAL_ROUTE } from "./utils/consts"
+import Edit from "./pages/EditGroup"
 
 
 export interface RouteModel {
@@ -18,18 +18,23 @@ export const authRoutes = [
         Component: Personal,
     },
     {
-        path: ACCESS_ROUTE,
-        Component: Access,
+        path: EDIT_ROUTE,
+        Component: Edit,
     },
+    // {
+    //     path: ACCESS_ROUTE,
+    //     Component: Access,
+    // },
+    // {
+    //     path: USERS_ROUTE,
+    //     Component: Users,
+    // },
     {
-        path: USERS_ROUTE,
-        Component: Users,
-    },
-    {
-        path: GROUP_ROUTE + '/:id',
+        path: GROUP_ROUTE,
         Component: GroupInfo,
     },
 ]
+//         path: GROUP_ROUTE + '/:id',
 
 export const publicRoutes = [
     {

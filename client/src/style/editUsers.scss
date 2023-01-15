@@ -1,0 +1,26 @@
+@import '../utils/templates.scss';
+
+.edit__wrapper {
+    background: url('../assets/test10.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    @extend %wrapperSizes;
+}
+
+.edit__nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    button, div {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.edit__panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}

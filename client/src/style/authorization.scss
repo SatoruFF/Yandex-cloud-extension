@@ -10,41 +10,46 @@
 .leftSide {
     width: 50%;
     height: 100vh;
-    background-color: white;
     overflow: hidden;
+    background: -webkit-linear-gradient(90deg, #1463ca,#e97f94,#ecdbac);background: linear-gradient(90deg, #1463ca,#e97f94,#ecdbac);
     @extend %centerTemplate;
 }
 
 .rightSide {
-    background: url('../assets/test9.png');
+    background: url('../assets/background.png');
     width: 50%;
     @extend %centerTemplate;
 }
 
 .form__space {
     padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     width: 80%;
-    // height: 60%;
-    background-color: white;
+    background-color: none;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+        color: white;
+    }
 }
 
 .form__title {
+    color: white;
     margin-top: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 
 .changePage {
     margin-top: 10px;
     color: skyblue;
-    a {
+    a, p {
         text-decoration: none;
         color: black;
     }
 }
+
 
 @media screen and (max-width: 992px) {
     .leftSide {

@@ -6,7 +6,7 @@
 .wrapper {
     width: 100%;
     height: 60px;
-    background-color: white;
+    background: white;
     z-index: 10;
     overflow: hidden;
     display: flex;
@@ -18,9 +18,13 @@
     a {
         text-decoration: none;
     }
-
-
     
+}
+
+.ex {
+    a {
+        margin-right: 50px;
+    }
 }
 
 .logo {

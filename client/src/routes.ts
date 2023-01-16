@@ -21,14 +21,6 @@ export const authRoutes = [
         path: EDIT_ROUTE,
         Component: Edit,
     },
-    // {
-    //     path: ACCESS_ROUTE,
-    //     Component: Access,
-    // },
-    // {
-    //     path: USERS_ROUTE,
-    //     Component: Users,
-    // },
     {
         path: GROUP_ROUTE,
         Component: GroupInfo,

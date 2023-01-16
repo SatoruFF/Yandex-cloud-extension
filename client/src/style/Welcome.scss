@@ -3,7 +3,7 @@
 .welcome__wrapper {
     width: 100%;
     height: 100vh;
-    background: url('../assets/test9.png') center center;
+    background: url('../assets/background.png') center center;
     background-size: cover;
     @extend %centerTemplate;
     @extend %wrapperSizes;
@@ -39,7 +39,6 @@
 }
 
 .banner__title:hover {
-    // background-color: rgb(84, 84, 84);
     cursor: default;
 }
 

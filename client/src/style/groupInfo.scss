@@ -1,7 +1,7 @@
 @import '../utils/templates.scss';
 
 .group__wrapper {
-    background: url('../assets/test10.png') no-repeat center center;
+    background: url('../assets/background.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -10,29 +10,83 @@
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: baseline;
     flex-direction: row;
     div, button {
         margin-top: 30px;
     }
 }
 
-.group__banner {
-    background-color: white;
-    width: 90%;
-    border-radius: 10px;
-    height: 30%;
-    padding: 30px;
-    margin: 20px auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+.banners__group {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%;
 }
+
+.banner {
+    background-color: none;
+}
+
+// .group__banner {
+//     // background-color: rgb(255, 255, 255);
+//     width: 70%;
+//     border-radius: 10px;
+//     height: 80%;
+//     padding: 30px;
+//     margin: 20px 20px;
+//     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+// }
 
 .group__banner__title {
     text-align: center;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;
+}
+
+.navigation {
+    .status__wrapper {
+        border-radius: 10px;
+        background-color: black;
+    }
+}
+
+.banner__description {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner__item {
+    padding: 10px;
+    background-color: teal;
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.one {
+    overflow: hidden;
+}
+
+.two {
+    overflow: hidden;
+}
+
+.visitors__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visitors__item {
+    background-color: teal;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
 }
 
 .editButton {
@@ -41,4 +95,20 @@
     align-items: center;
     justify-content: center;
     margin: 20px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banners__group {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .group__wrapper {
+        background: none;
+    }
 }

@@ -4,32 +4,9 @@ import MyButton from '../components/UI/MyButton';
 import MyStatus from '../components/UI/MyStatus';
 import { EDIT_ROUTE } from '../utils/consts';
 import '../style/groupInfo.scss'
-import { useFetching } from '../hooks/useFetching';
-import { FakeUsers } from '../http/placeholderService';
 import MyLoader from '../components/UI/MyLoader';
 
 const GroupInfo = () => {
-    const [visitors, setVisitors]: any = useState([])
-    const [comments, setComments]: any = useState([])
-
-    const [fetchCommentsArray, isLoadingComments, commentsError]: any = useFetching( async () => {
-        const response = await FakeUsers.getComments(4)
-        setComments([...response])
-    })
-
-    const [fetchUsersArray, isLoadingUsers, userError]: any = useFetching( async () => {
-        const response = await FakeUsers.getAllUsers()
-        setVisitors([...response])
-    })
-
-    useEffect(() => {
-
-        setTimeout(() => {
-            fetchCommentsArray()
-            fetchUsersArray()
-        }, 4000)
-
-    }, [])
 
     return (
         <div className="group__wrapper">

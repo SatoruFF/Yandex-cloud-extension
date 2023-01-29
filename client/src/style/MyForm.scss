@@ -13,18 +13,30 @@
         margin: 10px;
         border-bottom: 2px solid white;
     }
-    input[type=email]::placeholder {
+    input::placeholder {
         color: white;
         opacity: 0.7;
         text-transform: uppercase;
     }
-    input[type=password]::placeholder {
-        color: white;
-        opacity: 0.7;
-        text-transform: uppercase;
-    }
+    // input[type=email]::placeholder {
+    //     color: white;
+    //     opacity: 0.7;
+    //     text-transform: uppercase;
+    // }
+    // input[type=password]::placeholder {
+    //     color: white;
+    //     opacity: 0.7;
+    //     text-transform: uppercase;
+    // }
     input:focus {
         transform: scale(1.01);
         transition: transform 0.25s;
     }
+}
+
+.selectRole {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }

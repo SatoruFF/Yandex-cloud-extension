@@ -1,25 +1,22 @@
-import { createContext, useState } from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import AppRouter from './components/AppRouter'
-import MyNavbar from './components/MyNavbar'
-import { AuthContext } from './context'
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
+import MyNavbar from "./components/MyNavbar";
+import { setupStore } from "./store/store";
 
 function App() {
-  const [isAuth, setIsAuth]: any = useState(false);
+  const store = setupStore();
 
   return (
     <div className="App">
-      <AuthContext.Provider value={{
-        isAuth,
-        setIsAuth
-      }}>
+      <Provider store={store}>
         <BrowserRouter>
-            <MyNavbar></MyNavbar>
-            <AppRouter></AppRouter>
-          </BrowserRouter>
-      </AuthContext.Provider>
+          <MyNavbar></MyNavbar>
+          <AppRouter></AppRouter>
+        </BrowserRouter>
+      </Provider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
